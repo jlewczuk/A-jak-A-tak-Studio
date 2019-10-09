@@ -1,0 +1,23 @@
+{
+  "name": "a_jak_a_tak",
+  "version": "1.0.0",
+  "description": "A landing page for A jak? A tak! Studio",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlewczuk/A-jak-A-tak-Studio.git"
+  },
+  "author": "Jarosław Lewczuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jlewczuk/A-jak-A-tak-Studio/issues"
+  },
+  "homepage": "https://github.com/jlewczuk/A-jak-A-tak-Studio#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  },
+  "dependencies": {}
+}
