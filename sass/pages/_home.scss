@@ -1,6 +1,6 @@
 .section-about {
     background-color: $color-gray-light-1;
-    padding: 25rem 0;
+    padding: 25rem 0 35rem 0;
     margin-top: -20vh;
 }
 
@@ -19,4 +19,11 @@
         & > * {
             transform: skewY(7deg);
         }
+}
+
+.section-stories {
+    margin-top: -10rem;
+    // padding: 15rem 0;
+    padding: 25rem 5px 15rem 5rem;
+    background-color: $color-gray-light-1;
 }
