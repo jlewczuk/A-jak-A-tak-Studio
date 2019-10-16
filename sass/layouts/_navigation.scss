@@ -1,0 +1,24 @@
+.navigation {
+    width: 20%;
+    position: fixed;
+    float: left;
+    transform: translateY(-3rem);
+    z-index: 20;
+
+    &__logo {
+    position: relative;
+    top: 3.8rem;
+    left: 4rem;
+    height: 5rem;
+    z-index: 1;
+    }
+}
+
+.logo-white {
+    position: relative;
+    top: 3.8rem;
+    left: 4rem;
+    height: 5rem;
+    transform: translateX(-16rem);
+    z-index: 2;
+}

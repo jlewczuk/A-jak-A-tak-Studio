@@ -13,7 +13,13 @@
         <title>A Jak? A Tak! | Fotografia ślubna i okazyjna</title>
     </head>
     <body>
-        <header class="header">
+        <nav>
+            <div class="navigation">
+                <img src="img/nav-logo.png" alt="Logo" class="navigation__logo">
+                <img src="img/nav-logo-white.png" alt="Logo" id="nav-logo-white" class="navigation__logo logo-white">
+            </div>
+        </nav>
+        <header id="wp0" class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
             </div>
@@ -53,7 +59,7 @@
                     </div>
                 </div>
            </section>
-           <section class="section-features">
+           <section id="wp1" class="section-features">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -93,7 +99,13 @@
                     </div>
                 </div>
            </section>
-           <section class="section-stories">
+           <section id="wp2" class="section-stories">
+               <div class="bg-video">
+                   <video class="bg-video__content" autoplay muted loop>
+                        <source src="img/video.mp4" type="video/mp4">
+                        <source src="img/video.webm" type="video/webm">
+                   </video>
+               </div>
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Poznaj też naszych klientów!
@@ -156,5 +168,9 @@
                 </div>
             </div>
         </footer>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>

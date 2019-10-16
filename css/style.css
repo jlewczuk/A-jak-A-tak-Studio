@@ -189,6 +189,20 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .15;
+  overflow: hidden; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -247,7 +261,6 @@ body {
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: red;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     -webkit-clip-path: circle(50% at 50% 50%);
@@ -352,7 +365,8 @@ body {
   position: relative;
   animation: cutFromBottom 1.2s alternate 1.2s ease-in-out;
   animation-fill-mode: backwards;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh); }
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+  z-index: 20; }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -367,6 +381,27 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.navigation {
+  width: 20%;
+  position: fixed;
+  float: left;
+  transform: translateY(-3rem);
+  z-index: 20; }
+  .navigation__logo {
+    position: relative;
+    top: 3.8rem;
+    left: 4rem;
+    height: 5rem;
+    z-index: 1; }
+
+.logo-white {
+  position: relative;
+  top: 3.8rem;
+  left: 4rem;
+  height: 5rem;
+  transform: translateX(-16rem);
+  z-index: 2; }
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0 35rem 0;
@@ -377,11 +412,12 @@ body {
   background-image: linear-gradient(to right bottom, rgba(67, 196, 191, 0.8), rgba(52, 153, 149, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   transform: skewY(-7deg);
-  margin-top: -10rem; }
+  margin-top: -10rem;
+  z-index: 22; }
   .section-features > * {
     transform: skewY(7deg); }
 
 .section-stories {
+  position: relative;
   margin-top: -10rem;
-  padding: 25rem 5px 15rem 5rem;
-  background-color: #f7f7f7; }
+  padding: 25rem 5px 15rem 5rem; }

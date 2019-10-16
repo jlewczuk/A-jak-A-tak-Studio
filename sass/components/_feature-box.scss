@@ -12,7 +12,7 @@
         display: inline-block;
         background-image: linear-gradient(to right, $color-primary-light, $color-primary);
         -webkit-background-clip: text;
-        color: transparent
+        color: transparent;
     }
 
     &:hover > &__icon {
