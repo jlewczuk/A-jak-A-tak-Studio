@@ -247,6 +247,9 @@ body {
   .feature-box:hover > .feature-box__icon {
     animation: .5s icon-hover; }
 
+.features-list {
+  list-style: none; }
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -360,7 +363,7 @@ body {
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(67, 196, 191, 0.8), rgba(52, 153, 149, 0.8)), url(../img/hero2.jpg);
+  background-image: linear-gradient(to right bottom, rgba(67, 196, 191, 0.8), rgba(52, 153, 149, 0.8)), url(../img/main-photo.jpg);
   background-position: top;
   position: relative;
   animation: cutFromBottom 1.2s alternate 1.2s ease-in-out;
@@ -409,7 +412,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(67, 196, 191, 0.8), rgba(52, 153, 149, 0.8)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(67, 196, 191, 0.8), rgba(52, 153, 149, 0.8)), url(../img/features-photo.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem;
