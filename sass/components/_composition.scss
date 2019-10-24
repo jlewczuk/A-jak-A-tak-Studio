@@ -10,19 +10,81 @@
         transition: all .2s;
         outline-offset: 20px;
 
+        @include respond (tab-port) {
+            float: left;
+            position: relative;
+            width: 33.3%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        }
+
         &--p1 {
             left: 0;
             top: 0;
+
+            @include respond (laptop) {
+                top: 5rem;
+                left: 8rem;;
+                transform: scale(2);
+            }
+
+            @include respond (tab) {
+                top: 0;
+                left: 5%;
+                transform: scale(1.2);
+            }
+
+            @include respond (phone-l) {
+                top: 5rem;
+                left: 3%;
+                transform: scale(1.2);
+            }
         }
 
         &--p2 {
             right: 0;
             top: 6rem;
+
+            @include respond (laptop) {
+                top: 35rem;
+                left: 8rem;
+                transform: scale(2);
+            }
+
+            @include respond (tab) {
+                top: 0;
+                left: 27%;
+                transform: scale(1.2);
+                z-index: 100;
+            }
+
+            @include respond (phone-l) {
+                top: 5rem;
+                transform: scale(1.2);
+            }
         }
 
         &--p3 {
             left: 20%;
             top:14rem;
+
+            @include respond (laptop) {
+                top: 16rem;
+                left: 15rem;
+                transform: scale(2);
+            }
+
+            @include respond (tab) {
+                top: 0;
+                left: -24rem;
+                transform: scale(1.3);
+                z-index: 101;
+            }
+
+            @include respond (phone-l) {
+                top: 0;
+                left: -35%;
+                transform: scale(1.5);
+            }
         }
 
         &:hover {

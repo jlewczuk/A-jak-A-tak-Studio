@@ -9,11 +9,20 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
 
+    @include respond (tab) {
+        width: 95%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+
+    @include respond (phone-l) {
+        transform: skewX(0);
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
         float: left;
-        //background-color: red;
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         -webkit-clip-path: circle(50% at 50% 50%);
@@ -21,6 +30,10 @@
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
         overflow: hidden;
+
+        @include respond (phone-l) {
+            transform: translate(-3rem) skewX(0);
+        }
     }
 
     &__img {
@@ -31,6 +44,11 @@
 
     &__text {
         transform: skewX(12deg);
+
+        @include respond (phone-l) {
+            transform: skewX(0);
+    
+        }
     }
 
     &__caption {

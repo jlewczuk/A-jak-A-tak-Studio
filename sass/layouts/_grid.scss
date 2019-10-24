@@ -4,8 +4,22 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+
+        @include respond (tab) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include respond (laptop) {
+        max-width: 80rem;
+        padding: 0 3rem;
     }
     
+    @include respond (tab) {
+        max-width: 80rem;
+        padding: 0 3rem;
+    }
+
     @include clearfix;
 
     [class^="col-"] {
@@ -13,6 +27,26 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include respond (laptop) {
+                margin-bottom: $gutter-vertical-small;
+            }
+
+            @include respond (tab) {
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include respond (laptop) {
+            width: 40% !important;
+        }
+
+        @include respond (tab) {
+            width: 100% !important;
+        }
+
+        @include respond (phone-s) {
+            width: 100% !important;
         }
     }
 

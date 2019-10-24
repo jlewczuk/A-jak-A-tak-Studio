@@ -12,3 +12,71 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/*
+
+0px - 600px         Phone
+600px - 900px       Tablet portrait
+900px - 1200px      Tablet landscape
+[1200px - 1800px]   here our normal styles apply
+1800px +            Big desktop
+
+1. Base, Typography
+2. General layout. Grid
+3. Page layout
+4. Components
+
+1em = 16px
+
+Mobile S    320px
+Mobile M    375px
+Mobile L    425px
+Tablet      768px
+Laptop      1024px
+Laptop L    1440px
+4K          2560px
+
+*/
+
+@mixin respond ($breakpoint) {
+
+    @if $breakpoint == phone-s {
+        @media (max-width: 20em) { @content }  // 900px
+    }
+
+    @if $breakpoint == phone-m {
+        @media (max-width: 23.5em) { @content }  // 900px
+    }
+
+    @if $breakpoint == phone-l {
+        @media (max-width: 27em) { @content }  // 425px
+    }
+
+    @if $breakpoint == tab {
+        @media (max-width: 48em) { @content }  // 768px
+    }
+
+    @if $breakpoint == laptop {
+        @media (max-width: 64em) { @content }  // 768px
+    }
+
+    @if $breakpoint == laptop-l {
+        @media (max-width: 90em) { @content }  // 768px
+    }
+
+
+
+
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) { @content }  //600px = 37.5em
+    }
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) { @content }  // 900px
+    }
+    @if $breakpoint == tab-land {
+        @media (max-width: 75em) { @content } // 1200px
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) { @content } //1800px
+    }
+}

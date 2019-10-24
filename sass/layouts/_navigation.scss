@@ -11,6 +11,14 @@
     left: 4rem;
     height: 5rem;
     z-index: 1;
+
+        @include respond (tab) {
+            top: 6.3rem; 
+        }
+    }
+
+    @include respond (phone-l) {
+        opacity: 0;
     }
 }
 
@@ -21,4 +29,19 @@
     height: 5rem;
     transform: translateX(-16rem);
     z-index: 2;
+
+    @include respond (laptop) {
+        transform: translateX(0);
+        top: -1.8rem;
+    }
+
+    @include respond (tab) {
+        transform: translateX(-5.2rem);
+        top: 6.2rem;
+
+    }
+
+    @include respond (phone-l) {
+       opacity: 0;
+    }
 }

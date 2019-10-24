@@ -2,6 +2,10 @@
     background-color: $color-gray-light-1;
     padding: 25rem 0 35rem 0;
     margin-top: -20vh;
+
+    @include respond (tab-port) {
+        padding: 20rem 0 30rem 0;
+    }
 }
 
 .section-features {
@@ -20,10 +24,18 @@
         & > * {
             transform: skewY(7deg);
         }
+
+        @include respond (tab) {
+            padding: 10rem;
+        }
 }
 
 .section-stories {
     position: relative;
     margin-top: -10rem;
     padding: 25rem 5px 15rem 5rem;
+
+    @include respond (tab) {
+        padding: 20rem 0 10rem 0;
+    }
 }

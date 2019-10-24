@@ -60,6 +60,20 @@
     }
 }
 
+@keyframes cutFromBottom-phone-l {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    80% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 84.5vh);
+    }
+
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+    }
+}
+
 @keyframes logoRotate {
     0% {
         opacity: 0;

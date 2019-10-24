@@ -6,8 +6,16 @@
     margin-bottom: 1.5rem
 }
 .u-margin-bottom-medium {
-    margin-bottom: 4rem
+    margin-bottom: 4rem;
+
+    @include respond (tab) {
+        margin-bottom: 3rem;
+    }
 }
 .u-margin-bottom-big {
-    margin-bottom: 8rem
+    margin-bottom: 8rem;
+
+    @include respond (tab) {
+        margin-bottom: 5rem;
+    }
 }

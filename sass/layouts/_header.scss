@@ -9,7 +9,15 @@
     position: relative;
     animation: cutFromBottom 1.2s alternate 1.2s ease-in-out;
     animation-fill-mode: backwards;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75vh);
+
+    @include respond (phone-l) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85vh);
+        animation: cutFromBottom-phone-l 1.2s alternate 1.2s ease-in-out;
+        animation-fill-mode: backwards;
+    }
 
     z-index: 20;
 
