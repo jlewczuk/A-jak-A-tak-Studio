@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/jlewczuk/A-jak-A-tak-Studio#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "waypoints": "^4.0.1"
